@@ -100,7 +100,7 @@ export default function App() {
       <section className="relative h-[90vh] md:h-screen w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/wedding-decorations.jpg" 
+            src={`${import.meta.env.BASE_URL}wedding-decorations.jpg`}
             alt="Luxury Wedding Setup" 
             className="w-full h-full object-cover"
           />
@@ -150,7 +150,7 @@ export default function App() {
             <div className="relative aspect-[3/4] max-w-md mx-auto">
               <div className="absolute inset-0 bg-champagne rounded-t-full translate-x-4 translate-y-4 opacity-20"></div>
               <img 
-                src="/tricia.jpeg"
+                src={`${import.meta.env.BASE_URL}tricia.jpeg`}
                 onError={(e) => {
                   e.currentTarget.src = "https://images.unsplash.com/photo-1531123897727-8f129e1bfa82?ixlib=rb-4.0.3&auto=format&fit=crop&q=80";
                 }}
@@ -180,7 +180,7 @@ export default function App() {
               From intimate <span className="font-medium text-dark-brown">romantic dinners</span> and <span className="font-medium text-dark-brown">bridal setups</span> to grand <span className="font-medium text-dark-brown">weddings</span> and stunning <span className="font-medium text-dark-brown">luxury cakes</span>, we pour our hearts into every detail to transform your vision into a breathtaking reality, right here in Kampala.
             </motion.p>
             <motion.div variants={fadeInUp}>
-              <img src="/tricia-signature.png" alt="Tricia Signature" className="h-16 opacity-40 mix-blend-multiply" />
+              <img src={`${import.meta.env.BASE_URL}tricia-signature.png`} alt="Tricia Signature" className="h-16 opacity-40 mix-blend-multiply" />
             </motion.div>
           </motion.div>
         </div>
@@ -202,12 +202,12 @@ export default function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "Wedding Decoration", icon: Heart, img: "/wedding-decorations.jpg" },
-              { title: "Luxury Cakes", icon: Cake, img: "/luxury-cakes.jpg" },
-              { title: "Romantic Dinners", icon: GlassWater, img: "/romantic-dinners.jpg" },
-              { title: "Birthday Setups", icon: Gift, img: "/birthday-setups.jpg" },
-              { title: "Bridal Showers", icon: Camera, img: "/bridal-showers.jpg" },
-              { title: "Event Styling", icon: MapPin, img: "/romantic-dinners.jpg" },
+              { title: "Wedding Decoration", icon: Heart, img: `${import.meta.env.BASE_URL}wedding-decorations.jpg` },
+              { title: "Luxury Cakes", icon: Cake, img: `${import.meta.env.BASE_URL}luxury-cakes.jpg` },
+              { title: "Romantic Dinners", icon: GlassWater, img: `${import.meta.env.BASE_URL}romantic-dinners.jpg` },
+              { title: "Birthday Setups", icon: Gift, img: `${import.meta.env.BASE_URL}birthday-setups.jpg` },
+              { title: "Bridal Showers", icon: Camera, img: `${import.meta.env.BASE_URL}bridal-showers.jpg` },
+              { title: "Event Styling", icon: MapPin, img: `${import.meta.env.BASE_URL}romantic-dinners.jpg` },
             ].map((service, i) => (
               <motion.div 
                 key={i}
@@ -277,7 +277,7 @@ export default function App() {
             className="grid grid-cols-2 gap-4"
           >
             <div className="space-y-4 mt-12">
-              <img src="/birthday-setups.jpg" alt="Detail 1" className="w-full h-48 object-cover rounded-[40px]" />
+              <img src={`${import.meta.env.BASE_URL}birthday-setups.jpg`} alt="Detail 1" className="w-full h-48 object-cover rounded-[40px]" />
               <div className="bg-champagne p-6 rounded-[40px] text-center flex flex-col justify-center h-48 text-white">
                 <div className="text-5xl font-serif italic mb-2">5+</div>
                 <div className="text-[10px] uppercase tracking-[0.2em] font-medium opacity-90">Years Experience</div>
@@ -288,7 +288,7 @@ export default function App() {
                 <div className="text-5xl font-serif italic mb-2">100K+</div>
                 <div className="text-[10px] uppercase tracking-[0.2em] font-medium opacity-90">Happy Clients</div>
               </div>
-              <img src="/luxury-cakes.jpg" alt="Detail 2" className="w-full h-48 object-cover rounded-[40px]" />
+              <img src={`${import.meta.env.BASE_URL}luxury-cakes.jpg`} alt="Detail 2" className="w-full h-48 object-cover rounded-[40px]" />
             </div>
           </motion.div>
         </div>
@@ -310,12 +310,12 @@ export default function App() {
 
           <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
             {[
-              "/wedding-decorations.jpg",
-              "/luxury-cakes.jpg",
-              "/romantic-dinners.jpg",
-              "/gallery.jpg",
-              "/birthday-setups.jpg",
-              "/wedding-decorations.jpg",
+              `${import.meta.env.BASE_URL}wedding-decorations.jpg`,
+              `${import.meta.env.BASE_URL}luxury-cakes.jpg`,
+              `${import.meta.env.BASE_URL}romantic-dinners.jpg`,
+              `${import.meta.env.BASE_URL}gallery.jpg`,
+              `${import.meta.env.BASE_URL}birthday-setups.jpg`,
+              `${import.meta.env.BASE_URL}wedding-decorations.jpg`,
             ].map((src, i) => (
               <motion.div 
                 key={i}
